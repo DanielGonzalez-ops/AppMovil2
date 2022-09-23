@@ -1,0 +1,30 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-icon name="qr-code-outline"></ion-icon>
+    Escanear QR
+    <div class="row ">
+      <ion-button [routerLink]="['/menu']">Cerrar Sesion</ion-button>
+    </div> 
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Bienvenido  <span id="wea"></span></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+      <ion-avatar  style="margin: 0 auto;">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+      </ion-avatar>
+
+  </ion-content>
+</div>

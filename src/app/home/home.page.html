@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Duoc UC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Duoc UC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input placeholder="Ingrese Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input placeholder="Ingrese Contraseña"></ion-input>
+      </ion-item>
+      <ion-button [routerLink]="['/menu']">Iniciar Sesion</ion-button>
+    </ion-card-content>
+    <p>¿Olvido la contraseña?<a target="_blank" rel="noopener noreferrer" [routerLink]="['/recuperar']">Recuperar Contraseña</a></p>
+  </div>
+  
+</ion-content>

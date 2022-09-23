@@ -10,7 +10,6 @@ export class MenuPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.getElementById("wea").innerHTML = localStorage.getItem('usuario')
   }
 
 }

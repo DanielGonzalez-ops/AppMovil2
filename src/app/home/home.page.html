@@ -14,15 +14,39 @@
 
   <div id="container">
     <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">Usuario</ion-label>
-        <ion-input placeholder="Ingrese Usuario"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Contraseña</ion-label>
-        <ion-input placeholder="Ingrese Contraseña"></ion-input>
-      </ion-item>
-      <ion-button [routerLink]="['/menu']">Iniciar Sesion</ion-button>
+      <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+              <ion-input 
+                placeholder="Ingrese su Email" 
+                type="text"
+                name="email"
+                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                [(ngModel)]="usuario.email"
+                requerid>
+              </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input 
+              placeholder="Ingrese su Contraseña" 
+              type="password"
+              name="password"
+              [(ngModel)]="usuario.password"
+              requerid
+              minlength="4">
+            </ion-input>
+          </ion-item>
+         </ion-list> 
+         <ion-button expand="full" type="submit"
+                      [disabled]="formulario.invalid"
+                      [routerLink]="['/menu']"
+                      >
+                      
+            Iniciar Sesion
+         </ion-button>
+      </form>
     </ion-card-content>
     <p>¿Olvido la contraseña?<a target="_blank" rel="noopener noreferrer" [routerLink]="['/recuperar']">Recuperar Contraseña</a></p>
   </div>

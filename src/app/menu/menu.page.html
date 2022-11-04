@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>menu</ion-title>
+    <ion-title class="ion-text-center" >Menú</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,28 +8,50 @@
   <ion-avatar  style="margin: 0 auto;">
     <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
   </ion-avatar>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="camera" (click)="takePicture()">
-        <ion-icon name="camera"></ion-icon>
-        <ion-label>Camara</ion-label>
-        <ion-badge></ion-badge>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="companeros" >
-        <ion-icon name="person-circle"></ion-icon>
-        <ion-label>Compañeros</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="asistencia">
-        <ion-icon name="receipt-outline"></ion-icon>
-        <ion-label>Asistencia</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="ayuda">
-        <ion-icon name="information-circle"></ion-icon>
-        <ion-label>Ayuda</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+  <h4 class="ion-text-center" >BIENVENIDO</h4>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button size="medium">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button>
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon [routerLink]="['/estudiantes']" name="person-circle"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="receipt-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
 </ion-content>
+
+
+
+
+
+<!-- <ion-tabs> -->
+  <!-- <ion-tab-bar slot="bottom"> -->
+    <!-- <ion-tab-button tab="camera" (click)="takePicture()"> -->
+      <!-- <ion-icon name="camera"></ion-icon> -->
+      <!-- <ion-label>Camara</ion-label> -->
+      <!-- <ion-badge></ion-badge> -->
+    <!-- </ion-tab-button> -->
+
+    <!-- <ion-tab-button tab="companeros" > -->
+      <!-- <ion-icon name="person-circle"></ion-icon> -->
+      <!-- <ion-label>Compañeros</ion-label> -->
+    <!-- </ion-tab-button> -->
+
+    <!-- <ion-tab-button tab="asistencia"> -->
+      <!-- <ion-icon name="receipt-outline"></ion-icon> -->
+      <!-- <ion-label>Asistencia</ion-label> -->
+    <!-- </ion-tab-button> -->
+
+    <!-- <ion-tab-button tab="ayuda"> -->
+      <!-- <ion-icon name="information-circle"></ion-icon> -->
+      <!-- <ion-label>Ayuda</ion-label> -->
+    <!-- </ion-tab-button> -->
+  <!-- </ion-tab-bar> -->
+<!-- </ion-tabs> -->

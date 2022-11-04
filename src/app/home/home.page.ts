@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomePage implements OnInit 
 {
+  token = '1234'
   nombre : String;
   usuario = {
     email:'',
@@ -20,8 +21,7 @@ export class HomePage implements OnInit
   
   ngOnInit() {}
 
-  onSubmitTemplate(){
-    console.log('Form submit')
-    console.log(this.usuario)
+  login(){
+    localStorage.setItem('token',this.token)
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Storage } from '@ionic/storage';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +15,11 @@ export class HomePage implements OnInit
     password:''
   };
 
-  constructor() {}
+  constructor(public router: Router, 
+              private storage: Storage) {}
   
   ngOnInit() {}
-  
+
   onSubmitTemplate(){
     console.log('Form submit')
     console.log(this.usuario)

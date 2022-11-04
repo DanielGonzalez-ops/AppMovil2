@@ -1,30 +1,35 @@
-<ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-    <ion-icon name="qr-code-outline"></ion-icon>
-    Escanear QR
-    <div class="row ">
-      <ion-button [routerLink]="['/home']">Cerrar Sesion</ion-button>
-    </div> 
-  </ion-content>
-</ion-menu>
-<div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Bienvenido</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-      <ion-avatar  style="margin: 0 auto;">
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
-      </ion-avatar>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  </ion-content>
-</div>
+<ion-content>
+  <ion-avatar  style="margin: 0 auto;">
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg">
+  </ion-avatar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="camera" (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+        <ion-label>Camara</ion-label>
+        <ion-badge></ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="companeros" >
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Compañeros</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="asistencia">
+        <ion-icon name="receipt-outline"></ion-icon>
+        <ion-label>Asistencia</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="ayuda">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Ayuda</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

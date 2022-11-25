@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { Router } from '@angular/router';
+import { map } from "rxjs/operators"
 
 @Component({
   selector: 'app-estudiantes',
@@ -8,15 +10,28 @@ import { HttpClient } from '@angular/common/http'
 })
 export class EstudiantesPage implements OnInit {
 
-  usuario = []
+users:any = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private router: Router,
+    private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get<any>('http://localhost:3000/usuarios')
-    .subscribe(res => {
-      console.log(res);
-      this.usuario = res.results});
+    this.getUsers().subscribe(res=>{
+      console.log("res",res)
+      this.users = res;
+    })
+
+  }
+
+  getUsers(){
+    return this.http
+    .get("assets/server/datos.json")
+    .pipe(
+      map((res:any) =>{
+        return res.usuarios;
+      })
+    )
   }
 
 }

@@ -1,0 +1,113 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nombre": "Ana Ríos"
+      },
+      {
+        "id": 2,
+        "nombre": "Luis Díaz"
+      },
+      {
+        "id": 3,
+        "nombre": "Luis Aros"
+      },
+      {
+        "id": 4,
+        "nombre": "José Boza"
+      },
+      {
+        "id": 5,
+        "nombre": "Bryan Luna"
+      },
+      {
+        "id": 6,
+        "nombre": "Iñaki Minguez"
+      },
+      {
+        "id": 7,
+        "nombre": "German Tejedor"
+      },
+      {
+        "id": 8,
+        "nombre": "Ruben Coronado"
+      },
+      {
+        "id": 9,
+        "nombre": "Sebastian Morales"
+      },
+      {
+        "id": 10,
+        "nombre": "Carlos Encinas"
+      },
+      {
+        "id": 11,
+        "nombre": "Eduardo Diaz"
+      },
+      {
+        "id": 12,
+        "nombre": "Alfredo Serna"
+      },
+      {
+        "id": 13,
+        "nombre": "Raimundo Perales"
+      },
+      {
+        "id": 14,
+        "nombre": "Alan Borja"
+      },
+      {
+        "id": 15,
+        "nombre": "Alexis Agudo"
+      },
+      {
+        "id": 16,
+        "nombre": "Oliver Nieto"
+      },
+      {
+        "id": 17,
+        "nombre": "Fernando Herrera"
+      }
+    ],
+    "Profesores": [
+      {
+        "id": 1,
+        "nombre": "Eugenio Salas"
+        
+      },
+      {
+        "id": 2,
+        "nombre": "Mercedes Serna"
+        
+      },
+      {
+        "id": 3,
+        "nombre": "Ignacia Mari"
+      },
+      {
+        "id": 4,
+        "nombre": "Victor Silva"
+      }
+    ],
+    "Asignaturas": [
+      {
+        "id": 1,
+        "nombre": "Historia"
+        
+      },
+      {
+        "id": 2,
+        "nombre": "Lenguaje"
+        
+      },
+      {
+        "id": 3,
+        "nombre": "Matematicas"
+      },
+      {
+        "id": 4,
+        "nombre": "Ciencias"
+      }
+    ]
+  }
+  

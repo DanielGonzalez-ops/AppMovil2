@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Camera, CameraResultType} from '@capacitor/camera'
+import { Camera, CameraResultType, CameraSource} from '@capacitor/camera'
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-menu',
@@ -8,21 +9,23 @@ import { Camera, CameraResultType} from '@capacitor/camera'
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage {
-  picture: string;
+  
   router: Router;
+  photo: any
+  image : SafeResourceUrl;
+  
 
-  constructor() { }
+  constructor( private domSanitizer: DomSanitizer) { }
 
  
-  async takePicture() {
-    const image = await Camera.getPhoto({
-      quality: 100,
-      allowEditing: false,
-      resultType: CameraResultType.DataUrl
-      });
+  async takePhoto(){
+    const result = await Camera.getPhoto({
+      quality: 90,
+      allowEditing: true,
+      source: CameraSource.Camera,
+      resultType: CameraResultType.Base64
+    });
   
-      this.picture = image.dataUrl;
-
-  }
-  
+    this.image = this.domSanitizer.bypassSecurityTrustResourceUrl(result && result.base64String)
+  };
 }

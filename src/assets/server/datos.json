@@ -3,88 +3,88 @@
       {
         "id": 1,
         "nombre": "Ana Ríos",
-        "image": "assets/server/mujer2.jpg"
+        "image": "assets/img/mujer2.jpg"
       },
       {
         "id": 2,
         "nombre": "Luis Díaz",
-        "image": "assets/server/hombre1.jpg"
+        "image": "assets/img/hombre1.jpg"
         
       },
       {
         "id": 3,
         "nombre": "Luis Aros",
-        "image": "assets/server/hombre2.jpg"
+        "image": "assets/img/hombre2.jpg"
       },
       {
         "id": 4,
         "nombre": "José Boza",
-        "image": "assets/server/hombre3.jpg"
+        "image": "assets/img/hombre3.jpg"
       },
       {
         "id": 5,
         "nombre": "Bryan Luna",
-        "image": "assets/server/hombre4.jpg"
+        "image": "assets/img/hombre4.jpg"
       },
       {
         "id": 6,
         "nombre": "Iñaki Minguez",
-        "image": "assets/server/mujer3.jpg"
+        "image": "assets/img/mujer3.jpg"
       },
       {
         "id": 7,
         "nombre": "German Tejedor",
-        "image": "assets/server/hombre5.jpg"
+        "image": "assets/img/hombre5.jpg"
       },
       {
         "id": 8,
         "nombre": "Ruben Coronado",
-        "image": "assets/server/hombre6.jpg"
+        "image": "assets/img/hombre6.jpg"
       },
       {
         "id": 9,
         "nombre": "Sebastian Morales",
-        "image": "assets/server/hombre7.jpg"
+        "image": "assets/img/hombre7.jpg"
       },
       {
         "id": 10,
         "nombre": "Carlos Encinas",
-        "image": "assets/server/hombre8.jpg"
+        "image": "assets/img/hombre8.jpg"
       },
       {
         "id": 11,
         "nombre": "Eduardo Diaz",
-        "image": "assets/server/hombre9.jpg"
+        "image": "assets/img/hombre9.jpg"
       },
       {
         "id": 12,
         "nombre": "Alfredo Serna",
-        "image": "assets/server/hombre10.jpg"
+        "image": "assets/img/hombre10.jpg"
       },
       {
         "id": 13,
         "nombre": "Raimundo Perales",
-        "image": "assets/server/hombre11.jpg"
+        "image": "assets/img/hombre11.jpg"
       },
       {
         "id": 14,
         "nombre": "Alan Borja",
-        "image": "assets/server/hombre12.jpg"
+        "image": "assets/img/hombre12.jpg"
       },
       {
         "id": 15,
         "nombre": "Alexis Agudo",
-        "image": "assets/server/hombre13.jpg"
+        "image": "assets/img/hombre13.jpg"
       },
       {
         "id": 16,
         "nombre": "Oliver Nieto",
-        "image": "assets/server/hombre14.jpg"
+        "image": "assets/img/hombre14.jpg"
       },
       {
         "id": 17,
         "nombre": "Fernando Herrera",
-        "image": "assets/server/hombre15.jpg"
+        "image": "assets/img/hombre15.jpg"
       }
     ],
     "Profesores": [

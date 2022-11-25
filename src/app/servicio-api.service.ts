@@ -14,7 +14,7 @@ export class ServicioApiService {
 
   getUsers()
   {
-    let url = this.urlBaseApi + 'estudiante/';
+    let url = this.urlBaseApi + 'usuarios/';
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {
@@ -31,7 +31,7 @@ export class ServicioApiService {
   }
 
   getPosts(id: String){
-    let url = this.urlBaseApi + 'profesor/';
+    let url = this.urlBaseApi + 'Profesores/';
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {
@@ -53,7 +53,7 @@ export class ServicioApiService {
   }
 
   getComments(id: String){
-    let url = this.urlBaseApi + 'asignatura/';
+    let url = this.urlBaseApi + 'Asignaturas/';
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {

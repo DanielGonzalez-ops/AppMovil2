@@ -7,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class QRPage implements OnInit {
 
-  qrString = 'Holi'
+  qrString = ''
 
   constructor() { }
 

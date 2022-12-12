@@ -14,16 +14,14 @@
 
   <div id="container">
     <ion-card-content>
-      <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+      <form>
         <ion-list>
           <ion-item>
             <ion-label position="floating">Email</ion-label>
               <ion-input 
                 placeholder="Ingrese su Email" 
+                #correo
                 type="text"
-                name="email"
-                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-                [(ngModel)]="usuario.email"
                 requerid>
               </ion-input>
           </ion-item>
@@ -31,18 +29,15 @@
             <ion-label position="floating">Contraseña</ion-label>
             <ion-input 
               placeholder="Ingrese su Contraseña" 
-              type="password"
-              name="password"
-              [(ngModel)]="usuario.password"
-              requerid
-              minlength="4">
+              #cont
+              type="password">
             </ion-input>
           </ion-item>
+          <div *ngIf="mensaje">
+            <h3 id="error">{{mensaje}}</h3>
+          </div>
          </ion-list> 
-         <ion-button expand="full"  [routerLink]="['/menu']" (click)="login()" type="submit"
-                      [disabled]="formulario.invalid"
-                      >
-                      
+         <ion-button expand="full" (click)="checkear(correo, cont)">
             Iniciar Sesion
          </ion-button>
       </form>

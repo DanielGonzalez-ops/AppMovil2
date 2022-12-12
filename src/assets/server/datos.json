@@ -3,127 +3,149 @@
       {
         "id": 1,
         "nombre": "Ana Ríos",
+        "correo": "AnaRios@gmail.com",
         "image": "assets/img/mujer2.jpg"
       },
       {
         "id": 2,
         "nombre": "Luis Díaz",
+        "correo": "LuisDiaz@gmail.com",
         "image": "assets/img/hombre1.jpg"
         
       },
       {
         "id": 3,
         "nombre": "Luis Aros",
+        "correo": "LuisAros@gmail.com",
         "image": "assets/img/hombre2.jpg"
       },
       {
         "id": 4,
         "nombre": "José Boza",
+        "correo": "JoseBoza@gmail.com",
         "image": "assets/img/hombre3.jpg"
       },
       {
         "id": 5,
         "nombre": "Bryan Luna",
+        "correo": "BryanLuna@gmail.com",
         "image": "assets/img/hombre4.jpg"
       },
       {
         "id": 6,
         "nombre": "Iñaki Minguez",
+        "correo": "IñakiMinguez@gmail.com",
         "image": "assets/img/mujer3.jpg"
       },
       {
         "id": 7,
         "nombre": "German Tejedor",
+        "correo": "GermanTejado@gmail.com",
         "image": "assets/img/hombre5.jpg"
       },
       {
         "id": 8,
         "nombre": "Ruben Coronado",
+        "correo": "RubenCoronado@gmail.com",
         "image": "assets/img/hombre6.jpg"
       },
       {
         "id": 9,
         "nombre": "Sebastian Morales",
+        "correo": "SebastianMorales@gmail.com",
         "image": "assets/img/hombre7.jpg"
       },
       {
         "id": 10,
         "nombre": "Carlos Encinas",
+        "correo": "CarlosEncinas@gmail.com",
         "image": "assets/img/hombre8.jpg"
       },
       {
         "id": 11,
         "nombre": "Eduardo Diaz",
+        "correo": "EduardoDiaz@gmail.com",
         "image": "assets/img/hombre9.jpg"
       },
       {
         "id": 12,
         "nombre": "Alfredo Serna",
+        "correo": "AlfredoSerna@gmail.com",
         "image": "assets/img/hombre10.jpg"
       },
       {
         "id": 13,
         "nombre": "Raimundo Perales",
+        "correo": "RaimundoPerales@gmail.com",
         "image": "assets/img/hombre11.jpg"
       },
       {
         "id": 14,
         "nombre": "Alan Borja",
+        "correo": "AlanBorja@gmail.com",
         "image": "assets/img/hombre12.jpg"
       },
       {
         "id": 15,
         "nombre": "Alexis Agudo",
+        "correo": "AlexisAgudo@gmail.com",
         "image": "assets/img/hombre13.jpg"
       },
       {
         "id": 16,
         "nombre": "Oliver Nieto",
+        "correo": "OliverNieto@gmail.com",
         "image": "assets/img/hombre14.jpg"
       },
       {
         "id": 17,
         "nombre": "Fernando Herrera",
+        "correo": "FernandoHerrera@gmail.com",
         "image": "assets/img/hombre15.jpg"
       }
     ],
     "Profesores": [
       {
-        "id": 1,
-        "nombre": "Eugenio Salas"
+        "id": 60,
+        "nombre": "Eugenio Salas",
+        "correo": "EugenioSalas@gmail.com"
+        
         
       },
       {
-        "id": 2,
-        "nombre": "Mercedes Serna"
+        "id": 61,
+        "nombre": "Mercedes Serna",
+        "correo": "MercedesSerna@gmail.com"
         
       },
       {
-        "id": 3,
-        "nombre": "Ignacia Mari"
+        "id": 62,
+        "nombre": "Ignacia Mari",
+        "correo": "IgnaciaMari@gmail.com"
       },
       {
-        "id": 4,
-        "nombre": "Victor Silva"
+        "id": 63,
+        "nombre": "Victor Silva",
+        "correo": "VictorSilva@gmail.com"
       }
     ],
     "Asignaturas": [
       {
-        "id": 1,
+        "id": 567,
         "nombre": "Historia"
         
       },
       {
-        "id": 2,
+        "id": 568,
         "nombre": "Lenguaje"
         
       },
       {
-        "id": 3,
+        "id": 569,
         "nombre": "Matematicas"
       },
       {
-        "id": 4,
+        "id": 570,
         "nombre": "Ciencias"
       }
     ]

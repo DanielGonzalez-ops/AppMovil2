@@ -16,6 +16,7 @@ import { Routes } from '@angular/router';
     IonicModule,
     MenuPageRoutingModule
   ],
+
   declarations: [MenuPage]
 })
 export class MenuPageModule {}

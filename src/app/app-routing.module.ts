@@ -18,7 +18,7 @@ const routes: Routes = [
     loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
   },
   {
-    path: 'menu',
+    path: 'menu/:id',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
   {
